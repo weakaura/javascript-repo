@@ -38,4 +38,29 @@ console.log(decay)
 // В прошлом домашнем задании вы реализовали корзину на базе массивов. Какими объектами можно заменить их элементы?
 // Реализуйте такие объекты.
 // Перенести функционал подсчета корзины на объектно-ориентированную базу.
+alert("Задание №2. Количество продуктов в корзине и её стоимость в консоли")
+let apple = 10;
+let orange = 25;
+let banana = 15;
+
+let basket = {
+  amount: 0,
+  price: 0,
+  goods: [apple, orange, banana],
+}
+
+function basketAmount() {
+  return basket.amount = basket.goods.length;
+}
+
+function basketPrice() {
+  for (let i = 0; i < basket.goods.length; i++) {
+   basket.price += basket.goods[i];
+  }
+  return basket.price;
+}
+console.log(basket);
+console.log("Продуктов в корзине: " + basketAmount() + "\nСтоимость корзины: " + basketPrice());
+
+
 
